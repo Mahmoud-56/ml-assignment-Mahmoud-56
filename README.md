@@ -14,7 +14,7 @@ To run this assignment, you will be using Talapas OnDemand (https://ondemand.tal
 Open Talapas via the command line or VS code, and clone this repository into your bgmp directory.
 
 ### Optional: Weights and biases
-Weights and biases is a platform that allows researchers to track model perforamnce, collaborate, and build better models faster. 
+Weights and biases is a platform that allows researchers to track model performance, collaborate, and build better models faster. 
 
 Log into weights and biases after activating the conda environment and paste your API key when prompted
 ```wandb login```
