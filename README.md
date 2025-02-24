@@ -24,10 +24,10 @@ You can find your weights and biases API key by logging into weights and biases 
 Open Talapas OnDemand via Chrome, navigate to Interactive Apps then Jupyter, and finally fill out the Jupyter notebook launch page accordingly. Follow the directions from inside the notebooks to complete the assignmnet. 
 
 #### Part 1 Humpback Whale Classifier Jupyter launch:
-Account: bump; SLURM partition: gpu; Number of hours: 2; CPU Cores: 6; Total Memory: 32; Check box for GPU Enabled; Alternate Conda Environment: ```/projects/bgmp/shared/Bi625/ML_Assignment/Conda_Envs/HumpbackClassifierEnv```
+Account: bgmp; SLURM partition: gpu; Number of hours: 2; CPU Cores: 6; Total Memory: 32; Check box for GPU Enabled; Alternate Conda Environment: ```/projects/bgmp/shared/Bi625/ML_Assignment/Conda_Envs/HumpbackClassifierEnv```
 
 #### Part 2 Sequence Classifier Jupyter launch:
-Account: bump; SLURM partition: gpu; Number of hours: 2; CPU Cores: 6; Total Memory: 32; Check box for GPU Enabled; Alternate Conda Environment: ```/projects/bgmp/shared/Bi625/ML_Assignment/Conda_Envs/SequenceClassifier```
+Account: bgmp; SLURM partition: gpu; Number of hours: 2; CPU Cores: 6; Total Memory: 32; Check box for GPU Enabled; Alternate Conda Environment: ```/projects/bgmp/shared/Bi625/ML_Assignment/Conda_Envs/SequenceClassifier```
 
 ### A Final Note:
 If you get really into optimizing these ML models, it would be wise to switch from Talapas OnDemand and the Jupyter notebook to using the command line and a python script. In this case, fill out the Jupyter notebooks up until the "code and explore" sections (and submit the pdf of the Jupyter notebook). Then, convert the .ipynb to a python script and make your modifications for the "code and explore" sections. Submit the "code and explore" python script, .out file, and an images that it produced.
