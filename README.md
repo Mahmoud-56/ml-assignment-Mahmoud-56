@@ -2,22 +2,27 @@
 
 In this assignment, you will gain a familiarity with Machine Learning approaches to analyze two main types of biological data, images and sequences. 
 
-In part 1, you will analyze a dataset from HappyWhale's Kaggle competition. This dataset possesses individual humpack whales with pictures of their flukes. Your goal is to run and modify a classifier that sorts whales by their flukes. 
+In part 1, you will analyze a dataset from HappyWhale's Kaggle competition (Feel free to check out the original competition here: https://www.kaggle.com/competitions/humpback-whale-identification/overview). You will only analyze a small subset of this dataset that is already on Talapas ready for your use. This dataset possesses individual humpack whales with pictures of their flukes. Your goal is to run and modify a classifier that sorts whale fluke images into whale individuals' "names". 
 
-In part 2, you will analyze a dataset from Gresova et al., 2023. This dataset possesses human sequences from intergenomic and coding regions. Your goal is to run and build a classifier that sorts sequences by their status (coding vs intergenomic).
+In part 2, you will analyze a dataset from Gresova et al., 2023. This dataset possesses human sequences from intergenomic and coding regions. Your goal is to run and build a classifier that sorts sequences by their annotation (coding vs intergenomic).
 
 ## Completing this assignment
 
-To run this assignment, you will be using Talapas OnDemand (https://ondemand.talapas.uoregon.edu/) which will allow you to visualize what the model is "seeing" and "doing". Please note, the humpback whale classifier and the sequence classifier use two different machine learning modules (pytorch and tensorflow, respectively). Therefore, you will use one conda environment for the humpback whale classifier and a different conda environment for the sequence classifier. 
+To run this assignment, you will be using Talapas OnDemand (https://ondemand.talapas.uoregon.edu/) which will allow you to visualize what the model is "seeing" and "doing". Please note, the humpback whale classifier and the sequence classifier use two different machine learning packages (pytorch and tensorflow, respectively). Therefore, you will use one conda environment for the humpback whale classifier and a different conda environment for the sequence classifier. 
+
+#### Conda environments
+```/projects/bgmp/shared/Bi625/ML_Assignment/Conda_Envs/HumpbackClassifierEnv``` for the humpback whale classifier
+```/projects/bgmp/shared/Bi625/ML_Assignment/Conda_Envs/SequenceClassifier``` for the sequence classifier
 
 ### First, clone this repo
 Open Talapas via the command line or VS code, and clone this repository into your bgmp directory.
 
 ### Optional: Weights and biases
-Weights and biases is a platform that allows researchers to track model performance, collaborate, and build better models faster. 
+Weights and biases is a platform that allows researchers to track model perforamnce, collaborate, and build better models faster. After making an account, you can log into weights and biases via the command line then use their commands to track your training progress.
 
-Log into weights and biases after activating the conda environment and paste your API key when prompted
-```wandb login```
+Activate the conda environment (/projects/bgmp/shared/Bi625/ML_Assignment/Conda_Envs/HumpbackClassifierEnv), then type in 
+```wandb login``` and paste your API login key.
+
 You can find your weights and biases API key by logging into weights and biases on Chrome and going to the quickstart page.
 
 ### Then, launch Talapas OnDemand
@@ -30,7 +35,7 @@ Account: bgmp; SLURM partition: gpu; Number of hours: 2; CPU Cores: 6; Total Mem
 Account: bgmp; SLURM partition: gpu; Number of hours: 2; CPU Cores: 6; Total Memory: 32; Check box for GPU Enabled; Alternate Conda Environment: ```/projects/bgmp/shared/Bi625/ML_Assignment/Conda_Envs/SequenceClassifier```
 
 ### A Final Note:
-If you get really into optimizing these ML models, it would be wise to switch from Talapas OnDemand and the Jupyter notebook to using the command line and a python script. In this case, fill out the Jupyter notebooks up until the "code and explore" sections (and submit the pdf of the Jupyter notebook). Then, convert the .ipynb to a python script and make your modifications for the "code and explore" sections. Submit the "code and explore" python script, .out file, and an images that it produced.
+If you get really excited about optimizing these ML models, it would be wise to switch from Talapas OnDemand and the Jupyter notebook to using the command line and a python script. In this case, convert the jupyter notebooks into python scripts. Please make sure that you still answer the questions!
 
 ### Information on the Conda enviornments
 The conda environments for this assignment have been set up for you using the below packages. The packages are listed below for your reference.
@@ -64,3 +69,4 @@ pip install tfa-nightly
 conda install jupyter
 pip install genomic-benchmarks
 pip install wandb
+
