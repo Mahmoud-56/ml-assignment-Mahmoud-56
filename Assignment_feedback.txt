@@ -1,0 +1,11 @@
+1. Is this assignment accessible given the machine learning lectures and your python experience?
+
+2. What did you enjoy about this assignment?
+
+3. What could make this assignment more interesting to you? (different type of dataset, more hands-on coding, ect.)
+
+4. What was your biggest challenge with this assignment?
+
+5. Roughly, how long did you spend on this assignment? Was it feasible given your current workload?
+
+6. Is there anything that you are intersted in learning about machine learning that we did not cover in the lectures and assignment?
