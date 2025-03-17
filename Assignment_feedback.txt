@@ -9,3 +9,6 @@
 5. Roughly, how long did you spend on this assignment? Was it feasible given your current workload?
 
 6. Is there anything that you are intersted in learning about machine learning that we did not cover in the lectures and assignment?
+
+
+

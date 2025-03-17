@@ -1,0 +1,18 @@
+#!/bin/bash
+#SBATCH --output=install_conda-%j.out         ### File in which to store job output
+#SBATCH --error=install_conda-%j.err          ### File in which to store job error messages
+#SBATCH --time=0-24:00:00     ### Wall clock time limit in Days-HH:MM:SS
+#SBATCH --nodes=1             ### Node count required for the job
+#SBATCH --ntasks-per-node=1   ### Nuber of tasks to be launched per Node
+#SBATCH --account=bgmp    ### Account used for job submission
+#SBATCH --partition=bgmp ### trying running this on the bgmp partition
+#SBATCH --mem=100G ### memory requested
+
+conda create -p /projects/bgmp/malm/bioinfo/ml-assignment-Mahmoud-56/Sequence_classifier tensorflow=2.14 keras
+conda activate /projects/bgmp/malm/bioinfo/ml-assignment-Mahmoud-56/Sequence_classifier
+conda install esri::tensorflow-addons
+conda install jupyter
+conda install conda-forge::wandb
+pip install genomic-benchmarks
+
+
